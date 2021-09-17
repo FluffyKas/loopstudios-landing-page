@@ -1,0 +1,80 @@
+@use "variables" as *;
+
+.our-creations {
+  font-family: $ff-heading;
+  text-transform: uppercase;
+  margin: 0 1.5rem;
+}
+
+.title-wrapper {
+  text-align: center;
+}
+
+.our-creations__title {
+  font-size: 2rem;
+}
+
+.our-creations__button-desktop {
+  display: none;
+}
+
+.card:nth-of-type(1) {
+  background: url(../images/mobile/image-deep-earth.jpg);
+}
+
+.card:nth-of-type(2) {
+  background: url(../images/mobile/image-night-arcade.jpg);
+}
+
+.card:nth-of-type(3) {
+  background: url(../images/mobile/image-soccer-team.jpg);
+}
+
+.card:nth-of-type(4) {
+  background: url(../images/mobile/image-grid.jpg);
+}
+
+.card:nth-of-type(5) {
+  background: url(../images/mobile/image-from-above.jpg);
+}
+
+.card:nth-of-type(6) {
+  background: url(../images/mobile/image-pocket-borealis.jpg);
+}
+
+.card:nth-of-type(7) {
+  background: url(../images/mobile/image-curiosity.jpg);
+}
+
+.card:nth-of-type(8) {
+  background: url(../images/mobile/image-fisheye.jpg);
+}
+
+.our-creations__grid {
+  margin: 0 auto;
+}
+
+.our-creations__grid .card {
+  background-repeat: no-repeat;
+  color: $clr-white;
+  min-height: 150px;
+  position: relative;
+  background-size: contain;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 200;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 1rem;
+  width: 9rem;
+}
+
+.our-creations__button-mobile {
+  all: unset;
+  border: 2px solid black;
+  padding: .5rem 2rem;
+  line-height: 1;
+  font-weight: 300;
+}

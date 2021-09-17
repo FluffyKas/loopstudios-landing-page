@@ -1,2 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@200;300&display=swap");
+header {
+  background: url(/image-hero.1839d237.jpg) no-repeat;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  padding: 2.5rem 1.5rem;
+  text-transform: uppercase;
+}
+@media (min-width: 760px) {
+  header {
+    background: url(/image-hero.3d23263c.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  cursor: pointer;
+  width: 150px;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.nav-menu {
+  list-style: none;
+}
+.nav-menu a,
+.nav-menu a:active {
+  color: white;
+  text-decoration: none;
+  display: none;
+}
+
+.header-title {
+  border: 2px solid white;
+  font-size: 1.2rem;
+  margin: 11rem 0;
+  padding: 1.5rem;
+  line-height: 1;
+}
+
+.hero {
+  padding: 6rem 1.5rem;
+}
+
+.hero__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero__text-box {
+  text-align: center;
+  padding: 3rem 0;
+}
+.hero__text-box h2 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1;
+  padding-bottom: 1rem;
+}
+.hero__text-box p {
+  font-family: "Alata", sans-serif;
+  color: #8c8c8c;
+  line-height: 1.7;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.our-creations {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  margin: 0 1.5rem;
+}
+
+.title-wrapper {
+  text-align: center;
+}
+
+.our-creations__title {
+  font-size: 2rem;
+}
+
+.our-creations__button-desktop {
+  display: none;
+}
+
+.card:nth-of-type(1) {
+  background: url(/image-deep-earth.9b00b105.jpg);
+}
+
+.card:nth-of-type(2) {
+  background: url(/image-night-arcade.c5ac0f92.jpg);
+}
+
+.card:nth-of-type(3) {
+  background: url(/image-soccer-team.4445e8e5.jpg);
+}
+
+.card:nth-of-type(4) {
+  background: url(/image-grid.4a3ac470.jpg);
+}
+
+.card:nth-of-type(5) {
+  background: url(/image-from-above.10751646.jpg);
+}
+
+.card:nth-of-type(6) {
+  background: url(/image-pocket-borealis.c9e707c1.jpg);
+}
+
+.card:nth-of-type(7) {
+  background: url(/image-curiosity.e3526142.jpg);
+}
+
+.card:nth-of-type(8) {
+  background: url(/image-fisheye.135af53e.jpg);
+}
+
+.our-creations__grid {
+  margin: 0 auto;
+}
+
+.our-creations__grid .card {
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 150px;
+  position: relative;
+  background-size: contain;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 200;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 1rem;
+  width: 9rem;
+}
+
+.our-creations__button-mobile {
+  all: unset;
+  border: 2px solid black;
+  padding: 0.5rem 2rem;
+  line-height: 1;
+  font-weight: 300;
+}
+
+footer {
+  background: black;
+  font-family: "Alata", sans-serif;
+  padding: 3.5rem 3rem;
+  text-align: center;
+}
+@media (min-width: 760px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 3rem 10rem;
+  }
+}
+
+.footer-links {
+  list-style: none;
+  font-size: 0.95rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer-links a,
+.footer-links a:active {
+  color: white;
+  text-decoration: none;
+}
+@media (min-width: 760px) {
+  .footer-links {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 760px) {
+  .social-media {
+    justify-content: right;
+  }
+}
+
+.copyright {
+  color: #8c8c8c;
+  padding-top: 1rem;
+}
+@media (min-width: 760px) {
+  .copyright {
+    padding-top: 2rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+}
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

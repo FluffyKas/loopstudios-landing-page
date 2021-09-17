@@ -1,0 +1,59 @@
+@use "variables" as *;
+
+header {
+  background: url(../images/mobile/image-hero.jpg) no-repeat;
+  color: $clr-white;
+  font-family: $ff-heading;
+  font-weight: 200;
+  padding: 2.5rem 1.5rem;
+  text-transform: uppercase;
+
+  @media (min-width: 760px) {
+    background: url(../images/desktop/image-hero.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// LOGO
+
+.logo {
+  cursor: pointer;
+  width: 150px;
+  opacity: 1;
+  transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+  opacity: .85;
+}
+
+// HAMBURGER
+
+.hamburger {
+  cursor: pointer;
+}
+
+.nav-menu {
+  list-style: none;
+
+  a,
+  a:active {
+    color: $clr-white;
+    text-decoration: none;
+    display: none;
+  }
+}
+
+.header-title {
+  border: 2px solid $clr-white;
+  font-size: 1.2rem;
+  margin: 11rem 0;
+  padding: 1.5rem;
+  line-height: 1;
+}

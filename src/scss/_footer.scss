@@ -1,0 +1,57 @@
+@use "variables" as *;
+
+footer {
+  background: $clr-black;
+  font-family: $ff-main;
+  padding: 3.5rem 3rem;
+  text-align: center;
+
+  @media (min-width: 760px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 3rem 10rem;
+  }
+}
+
+.footer-links {
+  list-style: none;
+  font-size: .95rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  a,
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+
+  @media (min-width: 760px) {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 760px) {
+    justify-content: right;
+  }
+}
+
+.copyright {
+  color: $clr-gray-500;
+  padding-top: 1rem;
+
+  @media (min-width: 760px) {
+    padding-top: 2rem;
+  }
+}
