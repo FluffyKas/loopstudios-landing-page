@@ -28,12 +28,29 @@ footer {
   a:active {
     color: white;
     text-decoration: none;
+    position: relative;
   }
 
   @media (min-width: 760px) {
     flex-direction: row;
     padding-bottom: 0;
   }
+}
+
+.footer-links li a::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 1.7rem;
+	background-color: $clr-white;
+	width: 0;
+	height: 2px;
+  transition: all .3s ease-in;
+}
+
+.footer-links li a:hover::before {
+	width: 100%;
 }
 
 .social-media {
@@ -44,6 +61,16 @@ footer {
 
   @media (min-width: 760px) {
     justify-content: right;
+
+    a {
+      cursor: pointer;
+      transform: scale(1);
+      transition: all .2s ease
+    }
+
+    a:hover {
+      transform: scale(1.15);
+    }
   }
 }
 

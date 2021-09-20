@@ -9,6 +9,11 @@
 
 .title-wrapper {
   text-align: center;
+  max-width: 68.5rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .our-creations__title {
@@ -20,61 +25,77 @@
   }
 }
 
+.our-creations__grid {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1.5rem;
+  margin: 4rem auto 10rem auto;
+
+  @media (min-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+    max-width: 33rem;
+  }
+
+  @media (min-width: 860px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 68.5rem;
+  }
+}
+
+.card-link,
+.card-link:active {
+  color: $clr-white;
+  text-decoration: none;
+  position: relative;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.card-link:hover {
+  opacity: .7;
+}
+
+.card-link figure {
+  position: relative;
+  
+}
+
+.card-link figure::before {
+  content: "";
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.3) 70%);
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+}
+
+.card-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 1.3rem;
+  left: 1.5rem;
+  z-index: 15;
+  font-size: 1.5rem;
+  width: 40%;
+}
+
+// BUTTONS 
+
 .our-creations__button-desktop {
   display: none;
-}
 
-.card:nth-of-type(1) {
-  background: url(../images/mobile/image-deep-earth.jpg);
-}
-
-.card:nth-of-type(2) {
-  background: url(../images/mobile/image-night-arcade.jpg);
-}
-
-.card:nth-of-type(3) {
-  background: url(../images/mobile/image-soccer-team.jpg);
-}
-
-.card:nth-of-type(4) {
-  background: url(../images/mobile/image-grid.jpg);
-}
-
-.card:nth-of-type(5) {
-  background: url(../images/mobile/image-from-above.jpg);
-}
-
-.card:nth-of-type(6) {
-  background: url(../images/mobile/image-pocket-borealis.jpg);
-}
-
-.card:nth-of-type(7) {
-  background: url(../images/mobile/image-curiosity.jpg);
-}
-
-.card:nth-of-type(8) {
-  background: url(../images/mobile/image-fisheye.jpg);
-}
-
-.our-creations__grid {
-  margin: 0 auto;
-}
-
-.our-creations__grid .card {
-  background-repeat: no-repeat;
-  color: $clr-white;
-  min-height: 150px;
-  position: relative;
-  background-size: contain;
-}
-
-.card__title {
-  font-size: 1.5rem;
-  font-weight: 200;
-  position: absolute;
-  bottom: 2.5rem;
-  left: 1rem;
-  width: 9rem;
+  @media (min-width: 700px) {
+    display: inline-block;
+    all: unset;
+    border: 2px solid black;
+    padding: .5rem 2rem;
+    line-height: 1;
+    font-weight: 300;
+  }
 }
 
 .our-creations__button-mobile {
@@ -83,4 +104,8 @@
   padding: .5rem 2rem;
   line-height: 1;
   font-weight: 300;
+
+  @media (min-width: 700px) {
+    display: none;
+  }
 }
