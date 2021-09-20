@@ -1,16 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@200;300&display=swap");
 header {
   background: url(/image-hero.1839d237.jpg) no-repeat;
+  background-size: cover;
   color: white;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 200;
   padding: 2.5rem 1.5rem;
-  text-transform: uppercase;
 }
 @media (min-width: 760px) {
   header {
     background: url(/image-hero.3d23263c.jpg) no-repeat;
     background-size: cover;
+    padding: 3rem 5rem;
+  }
+}
+@media (min-width: 1100px) {
+  header {
+    padding: 3.5rem 10rem;
   }
 }
 
@@ -20,11 +25,27 @@ nav {
   justify-content: space-between;
 }
 
+nav.active {
+  background: black;
+}
+
 .logo {
   cursor: pointer;
-  width: 150px;
+  width: 9rem;
   opacity: 1;
   transition: all 0.2s ease-in-out;
+  position: relative;
+  z-index: 3;
+}
+@media (min-width: 560px) {
+  .logo {
+    width: 11rem;
+  }
+}
+@media (min-width: 860px) {
+  .logo {
+    width: 12.5rem;
+  }
 }
 
 .logo:hover {
@@ -32,25 +53,87 @@ nav {
 }
 
 .hamburger {
+  all: unset;
+  background-color: transparent;
   cursor: pointer;
+}
+.hamburger span {
+  background-color: white;
+  display: block;
+  height: 2px;
+  width: 25px;
+  margin-bottom: 6px;
+  transform-origin: 6.6px 1px;
+  transition: all 0.4s ease-out;
+}
+@media (min-width: 860px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  display: none;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
 }
 
 .nav-menu {
   list-style: none;
+  display: none;
+  text-transform: uppercase;
 }
 .nav-menu a,
 .nav-menu a:active {
   color: white;
   text-decoration: none;
-  display: none;
+}
+@media (min-width: 860px) {
+  .nav-menu {
+    display: flex;
+    gap: 2rem;
+    font-family: "Alata", sans-serif;
+    text-transform: initial;
+  }
+}
+
+.nav-menu.active {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.5rem;
+  justify-content: center;
+  padding-left: 1.5rem;
 }
 
 .header-title {
   border: 2px solid white;
   font-size: 1.2rem;
-  margin: 11rem 0;
+  margin: 11rem auto;
   padding: 1.5rem;
   line-height: 1;
+  text-transform: uppercase;
+  max-width: 25rem;
+}
+@media (min-width: 860px) {
+  .header-title {
+    font-size: 2rem;
+    max-width: 38rem;
+    padding: 2.5rem;
+    margin: 11rem 0;
+  }
 }
 
 .hero {
