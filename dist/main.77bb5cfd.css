@@ -8,7 +8,8 @@ header {
 }
 @media (min-width: 760px) {
   header {
-    background: url(/image-hero.3d23263c.jpg) no-repeat;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(/image-hero.3d23263c.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     padding: 3rem 5rem;
   }
@@ -23,10 +24,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-nav.active {
-  background: black;
 }
 
 .logo {
@@ -62,8 +59,8 @@ nav.active {
   display: block;
   height: 2px;
   width: 25px;
-  margin-bottom: 6px;
-  transform-origin: 6.6px 1px;
+  margin-bottom: 5px;
+  transform-origin: 7.6px 1px;
   transition: all 0.4s ease-out;
 }
 @media (min-width: 860px) {
@@ -93,6 +90,7 @@ nav.active {
 .nav-menu a:active {
   color: white;
   text-decoration: none;
+  position: relative;
 }
 @media (min-width: 860px) {
   .nav-menu {
@@ -101,6 +99,22 @@ nav.active {
     font-family: "Alata", sans-serif;
     text-transform: initial;
   }
+}
+
+.nav-menu li a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1.7rem;
+  background-color: white;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s ease-in;
+}
+
+.nav-menu li a:hover::before {
+  width: 100%;
 }
 
 .nav-menu.active {
@@ -121,7 +135,7 @@ nav.active {
 .header-title {
   border: 2px solid white;
   font-size: 1.2rem;
-  margin: 11rem auto;
+  margin: 9.5rem auto 11.5rem auto;
   padding: 1.5rem;
   line-height: 1;
   text-transform: uppercase;
@@ -138,6 +152,13 @@ nav.active {
 
 .hero {
   padding: 6rem 1.5rem;
+}
+@media (min-width: 860px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0rem;
+  }
 }
 
 .hero__image {
@@ -164,6 +185,23 @@ nav.active {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+@media (min-width: 860px) {
+  .hero__text-box {
+    width: 34rem;
+    background: white;
+    align-self: flex-end;
+    margin-left: -9.5rem;
+    text-align: left;
+    padding: 6rem 0 0 6rem;
+  }
+  .hero__text-box h2 {
+    font-size: 3rem;
+  }
+  .hero__text-box p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .our-creations {
   font-family: "Josefin Sans", sans-serif;
@@ -177,6 +215,12 @@ nav.active {
 
 .our-creations__title {
   font-size: 2rem;
+}
+@media (min-width: 860px) {
+  .our-creations__title {
+    font-size: 3rem;
+    text-align: left;
+  }
 }
 
 .our-creations__button-desktop {

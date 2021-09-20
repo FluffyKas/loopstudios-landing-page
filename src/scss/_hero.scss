@@ -2,6 +2,12 @@
 
 .hero {
   padding: 6rem 1.5rem;
+
+  @media (min-width: 860px) {
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0rem;
+  }
 }
 
 .hero__image {
@@ -28,6 +34,23 @@
     line-height: 1.7;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
 
+  @media (min-width: 860px) {
+    width: 34rem;
+    background: $clr-white;
+    align-self:flex-end;
+    margin-left: -9.5rem;
+    text-align: left;
+    padding: 6rem 0 0 6rem;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }

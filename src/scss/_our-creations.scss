@@ -4,6 +4,7 @@
   font-family: $ff-heading;
   text-transform: uppercase;
   margin: 0 1.5rem;
+
 }
 
 .title-wrapper {
@@ -12,6 +13,11 @@
 
 .our-creations__title {
   font-size: 2rem;
+
+  @media (min-width: 860px) {
+    font-size: 3rem;
+    text-align: left;
+  }
 }
 
 .our-creations__button-desktop {
