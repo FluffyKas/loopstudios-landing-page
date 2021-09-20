@@ -6,7 +6,7 @@ footer {
   padding: 3.5rem 3rem;
   text-align: center;
 
-  @media (min-width: 760px) {
+  @media (min-width: 980px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,7 +31,7 @@ footer {
     position: relative;
   }
 
-  @media (min-width: 760px) {
+  @media (min-width: 980px) {
     flex-direction: row;
     padding-bottom: 0;
   }
@@ -59,7 +59,7 @@ footer {
   align-items: center;
   justify-content: center;
 
-  @media (min-width: 760px) {
+  @media (min-width: 980px) {
     justify-content: right;
 
     a {
@@ -78,7 +78,7 @@ footer {
   color: $clr-gray-500;
   padding-top: 1rem;
 
-  @media (min-width: 760px) {
+  @media (min-width: 980px) {
     padding-top: 2rem;
   }
 }

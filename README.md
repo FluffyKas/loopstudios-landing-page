@@ -58,27 +58,19 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+*Different ways of mixing background colors and images*
 
-To see how you can add code snippets, see below:
+For the header, white text and a vivid background image were given. To create a higher contrast and make the text more readable, I used background-blend mode.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+````
+header {
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-color: rgba(0,0,0,0.4);
+  background-blend-mode: multiply;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+````
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I had to do something similar in the Our Creations section but since the images were added to the HTML, I had to find a different approach.
 
 ### Continued development
 

@@ -10,14 +10,23 @@
 .title-wrapper {
   text-align: center;
   max-width: 68.5rem;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+  @media (min-width: 700px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 33rem;
+  }
+
+  @media (min-width:860px) {
+    max-width: 68.5rem;
+  }
 }
 
 .our-creations__title {
   font-size: 2rem;
+  text-align: center;
 
   @media (min-width: 860px) {
     font-size: 3rem;
@@ -29,7 +38,7 @@
   display: grid;
   grid-template-columns: auto;
   gap: 1.5rem;
-  margin: 4rem auto 10rem auto;
+  margin: 4rem auto 0 auto;
 
   @media (min-width: 700px) {
     grid-template-columns: 1fr 1fr;
@@ -47,12 +56,12 @@
   color: $clr-white;
   text-decoration: none;
   position: relative;
-  opacity: 1;
-  transition: opacity .3s ease-in-out;
+  transform: scale(1);
+  transition: all .3s ease-in-out;
 }
 
 .card-link:hover {
-  opacity: .7;
+  transform: scale(1.05);
 }
 
 .card-link figure {
@@ -85,25 +94,38 @@
 
 // BUTTONS 
 
+.btn {
+  all: unset;
+  border: 2px solid black;
+  cursor: pointer;
+  padding: .75rem 2.5rem;
+  line-height: 1;
+  transition: all .2s ease;
+  letter-spacing: 2px;
+  font-family: $ff-main;
+}
+
+.btn:hover {
+  background: $clr-black;
+  color: $clr-white;
+}
+
 .our-creations__button-desktop {
   display: none;
 
   @media (min-width: 700px) {
     display: inline-block;
-    all: unset;
-    border: 2px solid black;
-    padding: .5rem 2rem;
-    line-height: 1;
-    font-weight: 300;
   }
 }
 
+.btn-mobile-wrapper {
+  margin-top: 2.5rem;
+  margin-bottom: 6rem;
+  display: grid;
+  place-items: center;
+}
+
 .our-creations__button-mobile {
-  all: unset;
-  border: 2px solid black;
-  padding: .5rem 2rem;
-  line-height: 1;
-  font-weight: 300;
 
   @media (min-width: 700px) {
     display: none;

@@ -3,10 +3,20 @@
 .hero {
   padding: 6rem 1.5rem;
 
+  @media (min-width: 600px) {
+    max-width: 33rem;
+    margin: 0 auto;
+  }
+
   @media (min-width: 860px) {
+    max-width: 68.5rem;
+  }
+
+  @media (min-width: 1200px) {
     display: flex;
     justify-content: center;
     padding: 10rem 0rem;
+    max-width: 68.5rem;
   }
 }
 
@@ -14,6 +24,7 @@
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 .hero__text-box {
@@ -36,7 +47,7 @@
     padding-right: 1rem;
   }
 
-  @media (min-width: 860px) {
+  @media (min-width: 1200px) {
     width: 34rem;
     background: $clr-white;
     align-self:flex-end;
