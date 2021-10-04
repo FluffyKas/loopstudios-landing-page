@@ -64,6 +64,24 @@
   transform: scale(1.05);
 }
 
+.card-link:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 4px dotted $clr-black;
+}
+
+.card-link:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do s  upport :focus-visible */
+  outline: none;
+}
+
+.card-link:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline: 4px dotted $clr-black;
+}
+
+
 .card-link figure {
   position: relative;
   
@@ -103,6 +121,23 @@
   transition: all .2s ease;
   letter-spacing: 2px;
   font-family: $ff-main;
+}
+
+.btn:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 3px dotted $clr-black;
+}
+
+.btn:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do s  upport :focus-visible */
+  outline: none;
+}
+
+.btn:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline: 3px dotted $clr-black;
 }
 
 .btn:hover {
