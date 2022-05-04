@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="scss/main.scss">
-  
+
   <title>Frontend Mentor | Loopstudios landing page</title>
 
 </head>
+
 <body>
 
   <header>
     <nav>
 
-      <a href="#" class="logo-link" aria-label="Loopstudios"><img src="images/logo.svg" alt="Loopstudios." class="logo"></a>
+      <a href="#" class="logo-link" aria-label="Loopstudios"><img src="images/logo.svg" alt="Loopstudios."
+          class="logo"></a>
 
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="nav-menu">
         <li><a href="#">About</a></li>
         <li><a href="#">Careers</a></li>
         <li><a href="#">Events</a></li>
@@ -25,7 +28,7 @@
         <li><a href="#">Support</a></li>
       </ul>
 
-      <button class="hamburger">
+      <button class="hamburger" aria-label="Toggle mobile menu" aria-controls="nav-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -42,7 +45,9 @@
       <img src="images/desktop/image-interactive.jpg" class="hero__image" alt="Man using a VR headset.">
       <div class="hero__text-box">
         <h2>The leader in interactive VR</h2>
-        <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+        <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best
+          companies around the globe. Our award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.</p>
       </div>
     </section>
 
@@ -52,78 +57,78 @@
         <button class="btn our-creations__button-desktop">See all</button>
       </div>
       <div class="our-creations__grid">
-          <a href="#" class="card-link">
-            <figure>
-              <picture>
-                <source media="(min-width: 700px)" srcset="images/desktop/image-deep-earth.jpg">
-                  <img class="card-image" src="images/mobile/image-deep-earth.jpg" alt="">
-              </picture>
-              <figcaption class="card-title">Deep Earth</figcaption>
-            </figure>
-          </a>
-          <a href="#" class="card-link">
-            <figure>
-              <picture>
-                <source media="(min-width: 700px)" srcset="images/desktop/image-night-arcade.jpg">
-                  <img class="card-image" src="images/mobile/image-night-arcade.jpg" alt="">
-              </picture>
-              <figcaption class="card-title">Night Arcade</figcaption>
-            </figure>
-          </a>
-          <a href="#" class="card-link">
-            <figure>
-              <picture>
-                <source media="(min-width: 700px)" srcset="images/desktop/image-soccer-team.jpg">
-                  <img class="card-image" src="images/mobile/image-soccer-team.jpg" alt="">
-              </picture>
-              <figcaption class="card-title">Soccer Team VR</figcaption>
-            </figure>
-          </a>
-          <a href="#" class="card-link">
-            <figure>
-              <picture>
-                <source media="(min-width: 700px)" srcset="images/desktop/image-grid.jpg">
-                  <img class="card-image" src="images/mobile/image-grid.jpg" alt="">
-              </picture>
-              <figcaption class="card-title">The Grid</figcaption>
-            </figure>
-          </a>
-          <a href="#" class="card-link">
-            <figure>
-              <picture>
-                <source media="(min-width: 700px)" srcset="images/desktop/image-from-above.jpg">
-                  <img class="card-image" src="images/mobile/image-from-above.jpg" alt="">
-              </picture>
-              <figcaption class="card-title">From Up Above VR</figcaption>
-            </figure>
-          </a>
-          <a href="#" class="card-link">
-            <figure>
-              <picture>
-                <source media="(min-width: 700px)" srcset="images/desktop/image-pocket-borealis.jpg">
-                  <img class="card-image" src="images/mobile/image-pocket-borealis.jpg" alt="">
-              </picture>
-              <figcaption class="card-title">Pocker Borealis</figcaption>
-            </figure>
-          </a>
-          <a href="#" class="card-link">
-            <figure>
-              <picture>
-                <source media="(min-width: 700px)" srcset="images/desktop/image-curiosity.jpg">
-                  <img class="card-image" src="images/mobile/image-curiosity.jpg" alt="">
-              </picture>
-              <figcaption class="card-title">The Curiosity</figcaption>
-            </figure>
-          </a>
-          <a href="#" class="card-link">
-            <figure>
-              <picture>
-                <source media="(min-width: 700px)" srcset="images/desktop/image-fisheye.jpg">
-                  <img class="card-image" src="images/mobile/image-fisheye.jpg" alt="">
-              </picture>
-              <figcaption class="card-title">Make It Fisheye</figcaption>
-            </figure>
-          </a>
+        <a href="#" class="card-link">
+          <figure>
+            <picture>
+              <source media="(min-width: 700px)" srcset="images/desktop/image-deep-earth.jpg">
+              <img class="card-image" src="images/mobile/image-deep-earth.jpg" alt="">
+            </picture>
+            <figcaption class="card-title">Deep Earth</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="card-link">
+          <figure>
+            <picture>
+              <source media="(min-width: 700px)" srcset="images/desktop/image-night-arcade.jpg">
+              <img class="card-image" src="images/mobile/image-night-arcade.jpg" alt="">
+            </picture>
+            <figcaption class="card-title">Night Arcade</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="card-link">
+          <figure>
+            <picture>
+              <source media="(min-width: 700px)" srcset="images/desktop/image-soccer-team.jpg">
+              <img class="card-image" src="images/mobile/image-soccer-team.jpg" alt="">
+            </picture>
+            <figcaption class="card-title">Soccer Team VR</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="card-link">
+          <figure>
+            <picture>
+              <source media="(min-width: 700px)" srcset="images/desktop/image-grid.jpg">
+              <img class="card-image" src="images/mobile/image-grid.jpg" alt="">
+            </picture>
+            <figcaption class="card-title">The Grid</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="card-link">
+          <figure>
+            <picture>
+              <source media="(min-width: 700px)" srcset="images/desktop/image-from-above.jpg">
+              <img class="card-image" src="images/mobile/image-from-above.jpg" alt="">
+            </picture>
+            <figcaption class="card-title">From Up Above VR</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="card-link">
+          <figure>
+            <picture>
+              <source media="(min-width: 700px)" srcset="images/desktop/image-pocket-borealis.jpg">
+              <img class="card-image" src="images/mobile/image-pocket-borealis.jpg" alt="">
+            </picture>
+            <figcaption class="card-title">Pocker Borealis</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="card-link">
+          <figure>
+            <picture>
+              <source media="(min-width: 700px)" srcset="images/desktop/image-curiosity.jpg">
+              <img class="card-image" src="images/mobile/image-curiosity.jpg" alt="">
+            </picture>
+            <figcaption class="card-title">The Curiosity</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="card-link">
+          <figure>
+            <picture>
+              <source media="(min-width: 700px)" srcset="images/desktop/image-fisheye.jpg">
+              <img class="card-image" src="images/mobile/image-fisheye.jpg" alt="">
+            </picture>
+            <figcaption class="card-title">Make It Fisheye</figcaption>
+          </figure>
+        </a>
       </div>
       <div class="btn-mobile-wrapper">
         <button class="btn our-creations__button-mobile">See all</button>
@@ -157,4 +162,5 @@
   <script src="menu-toggle.js"></script>
 
 </body>
+
 </html>
