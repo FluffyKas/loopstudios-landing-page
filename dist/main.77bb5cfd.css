@@ -52,19 +52,14 @@ nav {
 }
 
 .logo-link:focus {
-  /* Provide a fallback style for browsers
-     that don't support :focus-visible */
   outline: 3px dotted white;
 }
 
 .logo-link:not(:focus-visible) {
-  /* Remove the focus indicator on mouse-focus for browsers
-     that do s  upport :focus-visible */
   outline: none;
 }
 
 .logo-link:focus-visible {
-  /* for browsers that do support :focus-visible */
   outline: 3px dotted white;
 }
 
@@ -101,14 +96,12 @@ nav {
 }
 
 .nav-menu {
-  list-style: none;
   display: none;
   text-transform: uppercase;
 }
 .nav-menu a,
 .nav-menu a:active {
   color: white;
-  text-decoration: none;
   position: relative;
 }
 @media (min-width: 860px) {
@@ -137,19 +130,14 @@ nav {
 }
 
 .nav-menu li a:focus {
-  /* Provide a fallback style for browsers
-     that don't support :focus-visible */
   outline: 3px dotted white;
 }
 
 .nav-menu li a:not(:focus-visible) {
-  /* Remove the focus indicator on mouse-focus for browsers
-     that do s  upport :focus-visible */
   outline: none;
 }
 
 .nav-menu li a:focus-visible {
-  /* for browsers that do support :focus-visible */
   outline: 3px dotted white;
 }
 
@@ -537,14 +525,80 @@ footer {
   }
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html,
 body {
-  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a,
+a:active {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
